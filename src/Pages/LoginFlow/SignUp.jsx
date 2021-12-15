@@ -16,7 +16,8 @@ export default function SignUp(){
 				<div className="row">
 					<div className="col-sm-12  col-md-12 col-lg-10 m-auto">
 						<div className="loginBlock pt-5">
-							<h4 className="text-center mb-4">Sign Up</h4>
+							<h4 className="text-center mb-2">Sign Up</h4>
+							<p className="text-center">This information will let us know more about you.</p>
 							<div className="row pt-3">
 							<nav>
 							<div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -167,12 +168,12 @@ export default function SignUp(){
 											<InputField placeholder="Website"/>
 										</div>
 										<div className="col-lg-6 col-12">
-										Upload Passport copy of the Proprietor Or any Partner or Director (only .jpg, .png, .pdf allowed)
-										<UploadBtn/>
+											Upload Passport copy of the Proprietor Or any Partner or Director (only .jpg, .png, .pdf allowed)
+											<UploadBtn/>
 										</div>
 										<div className="col-lg-6 col-12">
-										Company Reg. (only .jpg, .png, .pdf allowed)
-										<UploadBtn/>
+											Company Reg. (only .jpg, .png, .pdf allowed)
+											<UploadBtn/>
 										</div>
 									</div>
 									</div>
@@ -181,7 +182,6 @@ export default function SignUp(){
 							<div className="mb-3 d-flex align-items-center justify-content-between">
 								<Button  primaryBtn label="Prev"/>
 								<Button  primaryBtn label="Next"/>
-
 							</div>
 						</div>
 					</div>
