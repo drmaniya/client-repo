@@ -3,18 +3,3 @@
   padding: 0;
   font-family: 'Open Sans', sans-serif !important;
 }
-.linkBtn {
-  background-color: transparent;
-  outline: none;
-  border: none;
-  font-family: 'Open Sans', sans-serif;
-  padding: 0px;
-  font-size: 14px;
-}
-.primaryBtn {
-  background-color: transparent;
-  outline: none;
-  border: 1px solid #ededed;
-  height: 40px;
-  padding: 0px 20px;
-}

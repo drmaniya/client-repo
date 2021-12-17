@@ -1,13 +1,35 @@
-import Login from './Pages/LoginFlow/Login';
-// import Header from './Pages/Component/Header';
-// import SignUp from './Pages/LoginFlow/SignUp';
+import { useEffect ,useState} from 'react';
+// import Login from './Pages/LoginFlow/Login';
+import Header from './Pages/Component/Header';
+import SignUp from './Pages/LoginFlow/SignUp';
+// import FAQ from './Pages/Faq';
+// import Events from './Pages/Events';
+import Operations from './Pages/Operations';
+import Footer from './Pages/Component/Footer';
 
-function App() {;
+function App() {
+	const [toggle, setToggle] = useState(false);
+	const handleScroll = () => {
+        if (window.screenTop + window.pageYOffset > 10) {
+            setToggle(true);
+        } else {
+            setToggle(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    }, []);
   return (
-    <div>
-		{/* <Header/> */}
-		<Login/>
-		{/* <SignUp/> */}
+    <div onScroll={handleScroll}>
+		<Header toggle={toggle}/>
+		{/* <Login/> */}
+		 <SignUp/>
+
+	{/*<FAQ/>
+	<Events/> */}
+	<Operations/>
+	<Footer/>
     </div>
   );
 }
