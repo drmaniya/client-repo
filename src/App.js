@@ -9,6 +9,7 @@ import Footer from './Pages/Component/Footer';
 import HomePage from './Pages/Home';
 import ContactUs from './Pages/ContactUs';
 import Layout from './Pages/Layout';
+import AboutUs from './Pages/AboutUs';
 
 function App() {
 	const [toggle, setToggle] = useState(false);
@@ -27,13 +28,14 @@ function App() {
     <div onScroll={handleScroll}>
 		<Header toggle={toggle}/>
 		<Login/>
-		 <SignUp/>
- 		<HomePage/>
-			<FAQ/>
-	<Events/>
-	<Operations/>
-	<ContactUs/>
-	<Layout/>
+		<AboutUs/>
+		 {/* <SignUp/> */}
+ 		{/* <HomePage/> */}
+			{/* <FAQ/> */}
+	{/* <Events/> */}
+	{/* <Operations/> */}
+	{/* <ContactUs/> */}
+	{/* <Layout/> */}
 	<Footer/>
     </div>
   );
