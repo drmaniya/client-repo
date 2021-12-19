@@ -13,7 +13,7 @@ export default function Header(props){
 				<div className="col-lg-8 col-2">
 					<div className="desktopMenu">
 						<ul className="p-0 mb-0 h-100 d-flex align-items-center ">
-							<li><a href="#Home">HOME</a></li>
+							<li><a href="#Home" >HOME</a></li>
 							<li><a href="#Home">ABOUT US</a></li>
 							<li><a href="#Home">EXCEPTIONAL DIAMONDS</a></li>
 							<li><a href="#Home">LAYOUTS</a></li>

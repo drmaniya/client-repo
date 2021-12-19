@@ -28,13 +28,13 @@ function App() {
     <div onScroll={handleScroll}>
 		<Header toggle={toggle}/>
 		<Login/>
-		<AboutUs/>
+		{/* <AboutUs/> */}
 		 {/* <SignUp/> */}
  		{/* <HomePage/> */}
 			{/* <FAQ/> */}
 	{/* <Events/> */}
 	{/* <Operations/> */}
-	{/* <ContactUs/> */}
+	<ContactUs/>
 	{/* <Layout/> */}
 	<Footer/>
     </div>
