@@ -1,11 +1,14 @@
 import { useEffect ,useState} from 'react';
-// import Login from './Pages/LoginFlow/Login';
+import Login from './Pages/LoginFlow/Login';
 import Header from './Pages/Component/Header';
 import SignUp from './Pages/LoginFlow/SignUp';
-// import FAQ from './Pages/Faq';
-// import Events from './Pages/Events';
+import FAQ from './Pages/Faq';
+import Events from './Pages/Events';
 import Operations from './Pages/Operations';
 import Footer from './Pages/Component/Footer';
+import HomePage from './Pages/Home';
+import ContactUs from './Pages/ContactUs';
+import Layout from './Pages/Layout';
 
 function App() {
 	const [toggle, setToggle] = useState(false);
@@ -23,12 +26,14 @@ function App() {
   return (
     <div onScroll={handleScroll}>
 		<Header toggle={toggle}/>
-		{/* <Login/> */}
+		<Login/>
 		 <SignUp/>
-
-	{/*<FAQ/>
-	<Events/> */}
+ 		<HomePage/>
+			<FAQ/>
+	<Events/>
 	<Operations/>
+	<ContactUs/>
+	<Layout/>
 	<Footer/>
     </div>
   );
