@@ -1,32 +1,26 @@
 import Slider from "react-slick";
+import Img1 from '../Assets/lay1.png';
+import Img2 from '../Assets/lay2.png';
+import Img3 from '../Assets/lay3.png';
 
 export default function Operations(){
 	const settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		appendDots: dots => (
-		  <div
-			style={{
-			  backgroundColor: "#ddd",
-			  borderRadius: "10px",
-			  padding: "10px"
-			}}
-		  >
-			<ul style={{ margin: "0px" }}> {dots} </ul>
-		  </div>
-		),
+		
+		  dots: true,
+		  dotsClass: "slick-dots slick-thumb",
+		  infinite: true,
+		  speed: 500,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
 		customPaging: i => (
 		  <div
 			style={{
-			  width: "30px",
+			  width: "80px",
 			  color: "blue",
-			  border: "1px blue solid"
+			  height:'80px',
 			}}
 		  >
-			{i + 1}
+			   <img src={require(`../Assets/lay${i+1}.png`)} alt="no-img" style={{height:'100%',width:'100%'}}/>
 		  </div>
 		)
 	  };
@@ -73,22 +67,13 @@ export default function Operations(){
 				<div className="pt-5 pb-5">
 					<Slider {...settings}>
 					<div>
-						<h3>1</h3>
+						<img src={Img1} alt="img-1"/>
 					</div>
 					<div>
-						<h3>2</h3>
+					<img src={Img2} alt="img-2"/>
 					</div>
 					<div>
-						<h3>3</h3>
-					</div>
-					<div>
-						<h3>4</h3>
-					</div>
-					<div>
-						<h3>5</h3>
-					</div>
-					<div>
-						<h3>6</h3>
+					<img src={Img3} alt="img-3"/>
 					</div>
 					</Slider>
 				</div>
