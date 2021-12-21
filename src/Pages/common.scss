@@ -16,6 +16,7 @@ a {
   border: none;
   font-family: 'Open Sans', sans-serif;
   padding: 0px;
+  color: yellow;
   font-size: 14px;
 }
 .primaryBtn {
@@ -24,6 +25,8 @@ a {
   border: 1px solid #ededed;
   height: 40px;
   padding: 0px 20px;
+  color: #000;
+  background-color: #fff;
   &:hover {
     background-color: #000;
     color: #fff;
@@ -41,8 +44,17 @@ a {
 }
 .description {
   line-height: 2rem;
-  color: #000;
+  color: #fff;
   font-size: 14px;
+  &.black {
+    color: #000;
+  }
+}
+.black {
+  color: #000;
+}
+.accordion-body {
+  background-color: #171717;
 }
 // header
 
@@ -193,5 +205,32 @@ a {
         border-bottom: 2px solid red;
       }
     }
+  }
+}
+
+// register
+
+.register {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  .RegisterImg {
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      display: block;
+      height: 100%;
+    }
+  }
+  .registerWrapper {
+    padding-left: 40px;
+  }
+  .captcha {
+    background-color: #fff;
+    color: #000;
+    padding: 0.3rem 1rem;
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
   }
 }

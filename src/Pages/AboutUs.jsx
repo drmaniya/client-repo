@@ -9,7 +9,7 @@ export default function AboutUs(){
 							<h3 className="fs-60">Introduction</h3>
 					</div>
 					<div className="col-lg-6 col-12">
-							<p className="description">
+							<p className="description ">
 								Established in 1985, Ankit Gems is a fast-growing Diamond Processing Company.
 								Recognized by the Indian Government as an Export House, Ankit Gems imports rough diamonds, processes and exports polished diamonds to different regions globally.
 							</p>
@@ -20,14 +20,14 @@ export default function AboutUs(){
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-6 col-12 mt-5">
-								<p  className="description">
+								<p  className="description black">
 									Established in 1985, Ankit Gems is a fast-growing Diamond Processing Company.
 									Recognized by the Indian Government as an Export House, Ankit Gems imports rough diamonds, processes and exports polished diamonds to different regions globally.
 								</p>
 						</div>
 						
 						<div className="col-lg-6 col-12  d-flex align-items-center">
-								<h3 className="fs-60 ms-2">Our Vision</h3>
+								<h3 className="fs-60 ms-2 black">Our Vision</h3>
 						</div>
 					</div>
 				</div>
@@ -49,20 +49,20 @@ export default function AboutUs(){
 						<div className="container">	
 						<div className="row pt-5 pb-5">
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12">
-								<h4 className="fw-normal">Membership</h4>
-								<p  className="description mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, necessitatibus! Corporis doloremque obcaecati delectus fuga est rem autem voluptatem molestias fugiat iste! Optio veniam repudiandae modi eaque placeat, quisquam ullam.</p>
+								<h4 className="fw-normal black">Membership</h4>
+								<p  className="description black mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, necessitatibus! Corporis doloremque obcaecati delectus fuga est rem autem voluptatem molestias fugiat iste! Optio veniam repudiandae modi eaque placeat, quisquam ullam.</p>
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12">
-								<h4 className="fw-normal">Craftsmanship</h4>
-								<p  className="description mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, necessitatibus! Corporis doloremque obcaecati delectus fuga est rem autem voluptatem molestias fugiat iste! Optio veniam repudiandae modi eaque placeat, quisquam ullam.</p>
+								<h4 className="fw-normal black">Craftsmanship</h4>
+								<p  className="description black mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, necessitatibus! Corporis doloremque obcaecati delectus fuga est rem autem voluptatem molestias fugiat iste! Optio veniam repudiandae modi eaque placeat, quisquam ullam.</p>
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12">
-								<h4 className="fw-normal">Social Responsibility</h4>
-								<p  className="description mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, necessitatibus! Corporis doloremque obcaecati delectus fuga est rem autem voluptatem molestias fugiat iste! Optio veniam repudiandae modi eaque placeat, quisquam ullam.</p>
+								<h4 className="fw-normal black">Social Responsibility</h4>
+								<p  className="description black mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, necessitatibus! Corporis doloremque obcaecati delectus fuga est rem autem voluptatem molestias fugiat iste! Optio veniam repudiandae modi eaque placeat, quisquam ullam.</p>
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12">
-								<h4 className="fw-normal">Ankit Gems Grading System</h4>
-								<p  className="description mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, necessitatibus! Corporis doloremque obcaecati delectus fuga est rem autem voluptatem molestias fugiat iste! Optio veniam repudiandae modi eaque placeat, quisquam ullam.</p>
+								<h4 className="fw-normal black">Ankit Gems Grading System</h4>
+								<p  className="description black mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, necessitatibus! Corporis doloremque obcaecati delectus fuga est rem autem voluptatem molestias fugiat iste! Optio veniam repudiandae modi eaque placeat, quisquam ullam.</p>
 							</div>
 						</div>
 						</div>

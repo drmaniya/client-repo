@@ -1,4 +1,11 @@
 .inputWrapper {
+  background-color: transparent;
+  &:focus {
+    background-color: transparent;
+    border: 1px solid yellow;
+    color: #fff;
+  }
+  color: #fff;
   &::placeholder {
     font-size: 14px;
   }

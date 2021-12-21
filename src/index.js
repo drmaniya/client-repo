@@ -6,7 +6,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 import './Pages/common.scss';
-import './Assets/scss/slickStyle.scss';
+import './Assets/scss/style.scss';
 
 ReactDOM.render(
   <React.StrictMode>
