@@ -17,7 +17,7 @@ export default function ContactUs(){
 					<li>W : WWW.ANKITGEMS.COM</li>
 					</ul>
 				</div>
-				<div className="col-12 text-center">
+				<div className="col-12 text-center mb-5">
 					We believe each customer is unique, hence we customize your needs...Need help??
 				</div>
 				<div className="col-lg-4 col-12">

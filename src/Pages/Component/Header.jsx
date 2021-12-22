@@ -20,7 +20,7 @@ export default function Header(props){
 							<li><Link to="/layout">LAYOUTS</Link></li>
 							<li><Link to="/faq">FAQ</Link></li>
 							<li><Link to="/events">EVENTS</Link></li>
-							<li><Link to="/operations">Operations</Link></li>
+							<li><Link to="/operations">OPERATIONS</Link></li>
 
 							<li><Link to="/login">LOGIN</Link></li>
 							<li><Link to="/signup">SIGN UP</Link></li>
@@ -41,7 +41,7 @@ hu
 							<li><Link to="/layout">LAYOUTS</Link></li>
 							<li><Link to="/faq">FAQ</Link></li>
 							<li><Link to="/events">EVENTS</Link></li>
-							<li><Link to="/operations">Operations</Link></li>
+							<li><Link to="/operations">OPERATIONS</Link></li>
 
 							<li><Link to="/login">LOGIN</Link></li>
 							<li><Link to="/signup">SIGN UP</Link></li>
