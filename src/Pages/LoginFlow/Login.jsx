@@ -5,11 +5,14 @@ import InputField from '../Component/Input';
 import CheckBox from '../Component/CheckBox';
 import Button from '../Component/Button';
 import Logo from '../../Assets/logo.png';
-// import { useHistory } from 'react-router-dom';
+import {
+	useNavigate
+ } from 'react-router-dom';
+
 
 export default function Login(){
-	// const history = useHistory();
-	// const handleClick = () => history.push('/some-route');
+	const navigate = useNavigate();
+	const handleClick = () => navigate('/signup');
 	return(
 		<div className="loginContainer">
 			<img src={BgImg} alt="no-img"/>
@@ -34,7 +37,7 @@ export default function Login(){
 							{/* <Button linkBtn label="Guest User Login" /> */}
 							</div>
 							<div className="mb-3 text-center">
-							Don't have an account ? <Button linkBtn label="Register Here"/>
+							Don't have an account ? <Button linkBtn label="Register Here" onClick={handleClick}/>
 								
 							</div>
 						</div>

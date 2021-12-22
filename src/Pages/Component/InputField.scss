@@ -1,8 +1,9 @@
 .inputWrapper {
-  background-color: transparent;
+  background-color: transparent !important;
+  color: #fff !important;
   &:focus {
     background-color: transparent;
-    border: 1px solid yellow;
+    border: 1px solid yellow !important;
     color: #fff;
   }
   color: #fff;
