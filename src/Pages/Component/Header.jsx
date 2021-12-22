@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import Logo from '../../Assets/logo.png';
+import {Link} from 'react-router-dom';
 
 export default function Header(props){
   const [isMobMenu,setMobMenu] = useState(false);
@@ -13,16 +14,18 @@ export default function Header(props){
 				<div className="col-lg-8 col-2">
 					<div className="desktopMenu">
 						<ul className="p-0 mb-0 h-100 d-flex align-items-center ">
-							<li><a href="#Home" >HOME</a></li>
-							<li><a href="#Home">ABOUT US</a></li>
-							<li><a href="#Home">EXCEPTIONAL DIAMONDS</a></li>
-							<li><a href="#Home">LAYOUTS</a></li>
-							<li><a href="#Home">FAQ</a></li>
-							<li><a href="#Home">EVENTS</a></li>
-							<li><a href="#Home">LOGIN</a></li>
-							<li><a href="#Home">SIGN UP</a></li>
+							<li><Link to="/" >HOME</Link></li>
+							<li><Link to="/about">ABOUT US</Link></li>
+							{/* <li><Link to="/">EXCEPTIONAL DIAMONDS</Link></li> */}
+							<li><Link to="/layout">LAYOUTS</Link></li>
+							<li><Link to="/faq">FAQ</Link></li>
+							<li><Link to="/events">EVENTS</Link></li>
+							<li><Link to="/operations">Operations</Link></li>
 
-							<li><a href="#Home">CONTACT US</a></li>
+							<li><Link to="/login">LOGIN</Link></li>
+							<li><Link to="/signup">SIGN UP</Link></li>
+
+							<li><Link to="/contact">CONTACT US</Link></li>
 						</ul>
 					</div>
 					<div onClick={()=> setMobMenu(!isMobMenu)} className="mobMenuIcon">
@@ -32,16 +35,18 @@ hu
 				{isMobMenu?
 				<div className="col-12">
 						<ul className="mb-0 h-100 mobMenu">
-							<li><a href="#Home">HOME</a></li>
-							<li><a href="#Home">ABOUT US</a></li>
-							<li><a href="#Home">EXCEPTIONAL DIAMONDS</a></li>
-							<li><a href="#Home">LAYOUTS</a></li>
-							<li><a href="#Home">FAQ</a></li>
-							<li><a href="#Home">EVENTS</a></li>
-							<li><a href="#Home">LOGIN</a></li>
-							<li><a href="#Home">SIGN UP</a></li>
+							<li><Link to="/" >HOME</Link></li>
+							<li><Link to="/about">ABOUT US</Link></li>
+							{/* <li><Link to="/">EXCEPTIONAL DIAMONDS</Link></li> */}
+							<li><Link to="/layout">LAYOUTS</Link></li>
+							<li><Link to="/faq">FAQ</Link></li>
+							<li><Link to="/events">EVENTS</Link></li>
+							<li><Link to="/operations">Operations</Link></li>
 
-							<li><a href="#Home">CONTACT US</a></li>
+							<li><Link to="/login">LOGIN</Link></li>
+							<li><Link to="/signup">SIGN UP</Link></li>
+
+							<li><Link to="/contact">CONTACT US</Link></li>
 						</ul>
 				</div>:false}
 			</div>
