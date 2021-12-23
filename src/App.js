@@ -14,8 +14,23 @@ import Register from './Pages/Register';
 import BgImg from './Assets/bg.jpeg';
 import {BrowserRouter,
 	Routes, // Just Use Routes instead of "Switch"
+	useLocation,
 	Route,} from 'react-router-dom';
 
+
+	const Hero = () => {
+		const location = useLocation();
+		return(
+			<div className="hero">
+			<img src={BgImg} alt="no-found"/>
+			<div className="heroTitle">
+				<div className="heroBlock">
+				{location.pathname === "/login"? '': location.pathname === "/signup"?'': location.pathname === "/" ? <h1>Welcome to Diamond</h1>: <h1>{location.pathname.substring(1)}</h1>}
+				</div>
+			</div>
+		</div>
+		)
+	}
 function App() {
 	const [toggle, setToggle] = useState(false);
 	const handleScroll = () => {
@@ -34,10 +49,9 @@ function App() {
 		
 		<BrowserRouter>
 		<Header toggle={toggle}/>
-		<div className="hero">
-			<img src={BgImg} alt="no-found"/>
-		</div>
+		<Hero/>
 			<Routes>
+				
 				<Route exact path="/" element={<HomePage />} />
 				<Route path="/login" element={<Login/>} />
 				<Route path="/about" element={<AboutUs/>} />
@@ -52,7 +66,7 @@ function App() {
 
 			</Routes>
     	</BrowserRouter>
- 	{/* <Footer/>  */}
+ 	<Footer/> 
     </div>
   );
 }

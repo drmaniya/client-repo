@@ -79,6 +79,7 @@ a {
 
 .hero {
   height: 100vh;
+  position: relative;
   width: 100%;
   img {
     width: 100%;
@@ -89,6 +90,26 @@ a {
   }
   @media (max-width: 480px) {
     display: none;
+  }
+  .heroTitle {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .heroBlock {
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      padding: 10rem;
+    }
+    h1 {
+      font-size: 70px;
+      padding: 2rem;
+      background-color: #000;
+      opacity: 0.9;
+      text-transform: capitalize;
+    }
   }
 }
 // header

@@ -12,7 +12,7 @@ export default function SignUp(){
 			<div className="container loginWrapper">
 				<div className="row">
 					<div className="col-sm-12  col-md-12 col-lg-10 m-auto">
-						<div className="loginBlock pt-5">
+						<div className="loginBlock pt-3">
 							<h4 className="text-center mb-2">Sign Up</h4>
 							<p className="text-center">This information will let us know more about you.</p>
 							<div className="row pt-3">
@@ -23,7 +23,7 @@ export default function SignUp(){
 								<button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reference Details</button>
 							</div>
 							</nav>
-							<div className="tab-content" id="nav-tabContent">
+							<div className="tab-content mt-3" id="nav-tabContent">
 								<div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 									<div className="row pt-5">
 										<div className="col-lg-4 col-md-6 col-12">
