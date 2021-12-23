@@ -25,7 +25,7 @@ export default function Operations(){
 		)
 	  };
 	return(
-		<div className="container pt-5 pb-5">
+		<div className="container pt-5 mt-5 pb-5">
 			<div className="row">
 				<div className="col-12">
 				<nav>
