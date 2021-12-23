@@ -4,11 +4,12 @@ import TextArea from "./Component/TextArea";
 
 export default function ContactUs(){
 	return(
-		<div className="container">
+		<div className="container mt-5 pt-5">
 			<div className="row">
-				<div className="col-lg-4 col-12">
-					<ul>
-						<li><label>IN</label></li>
+				{[1,2,3].map((i)=>(
+				<div key={i} className="col-lg-4 col-12">
+					<ul className="contactWrapper">
+					<li><label>IN</label></li>
 					<li>MUMBAI</li>
 					<li>E TOWER - EE 6011 / EC 6100, BHARAT DIAMOND BOURSE, BKC, BANDRA (EAST), MUMBAI - 400051.</li>
 					<li>P : +91 22 43548800 (TILL) 43548898</li>
@@ -16,8 +17,8 @@ export default function ContactUs(){
 					<li>E : INFO@ANKITGEMS.COM</li>
 					<li>W : WWW.ANKITGEMS.COM</li>
 					</ul>
-				</div>
-				<div className="col-12 text-center mb-5">
+				</div>))}
+				<div className="col-12 text-center mb-5 mt-5">
 					We believe each customer is unique, hence we customize your needs...Need help??
 				</div>
 				<div className="col-lg-4 col-12">

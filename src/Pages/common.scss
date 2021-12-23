@@ -330,3 +330,16 @@ a {
     width: 100%;
   }
 }
+
+// contact
+
+.contactWrapper {
+  border: 1px solid #fff;
+  padding: 1rem 1rem 1rem 3rem;
+  li {
+    label {
+      font-size: 40px;
+    }
+    margin: 10px 0px;
+  }
+}

@@ -165,18 +165,18 @@ export default function SignUp(){
 											<InputField placeholder="Website"/>
 										</div>
 										<div className="col-lg-6 col-12">
-											Upload Passport copy of the Proprietor Or any Partner or Director (only .jpg, .png, .pdf allowed)
+											<p>Upload Passport copy of the Proprietor Or any Partner or Director (only .jpg, .png, .pdf allowed)</p>
 											<UploadBtn/>
 										</div>
 										<div className="col-lg-6 col-12">
-											Company Reg. (only .jpg, .png, .pdf allowed)
+											<p>Company Reg. (only .jpg, .png, .pdf allowed)</p>
 											<UploadBtn/>
 										</div>
 									</div>
 									</div>
 								</div>
 							</div>
-							<div className="mb-3 d-flex align-items-center justify-content-between">
+							<div className="mb-3 mt-5 d-flex align-items-center justify-content-between">
 								<Button  primaryBtn label="Prev"/>
 								<Button  primaryBtn label="Next"/>
 							</div>
