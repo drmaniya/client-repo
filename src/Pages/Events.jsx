@@ -4,12 +4,12 @@ export default function Events(){
 		<div className="container pt-5 pb-5">
 			<div className="row eventBg">
 				<div className=" col-lg-8 col-12">
-						<div>
+						<div className="black">
 							Show
 						</div>
 				</div>
 				<div className=" col-lg-4 col-12">
-						<div>
+						<div className="black">
 							Location
 						</div>
 				</div>

@@ -28,7 +28,7 @@ export default function Layout(){
 		<div className="container pt-5 pb-5">
 			<div className="row">
 				<div className="col-lg-5 col-12">
-				<div className="pt-5 pb-5">
+				<div className="sliderBlock">
 					<Slider {...settings}>
 					<div>
 						<img src={Img1} alt="img-1"/>

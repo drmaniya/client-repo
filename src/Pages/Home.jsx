@@ -24,16 +24,16 @@ export default function HomePage(){
 				<div className="col-12 mb-5 mt-5">
 					<h4 className="fs-2">Partnership companies</h4>
 				</div>	
-				<div className="col-xl-3 col-lg-4 col-12">
+				<div className="col-xl-3 col-lg-4 col-12 partnerImg">
 					<img src={Img1} alt="no-img-found"/>
 				</div>
-				<div className="col-xl-3 col-lg-4 col-12">
+				<div className="col-xl-3 col-lg-4 col-12 partnerImg">
 					<img src={Img1} alt="no-img-found"/>
 				</div>
-				<div className="col-xl-3 col-lg-4 col-12">
+				<div className="col-xl-3 col-lg-4 col-12 partnerImg">
 					<img src={Img1} alt="no-img-found"/>
 				</div>
-				<div className="col-xl-3 col-lg-4 col-12">
+				<div className="col-xl-3 col-lg-4 col-12 partnerImg">
 					<img src={Img1} alt="no-img-found"/>
 				</div>
 			</div>

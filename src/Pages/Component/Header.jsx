@@ -8,11 +8,11 @@ export default function Header(props){
 	return(
 		<div className={`container-fluid header p-2 ${props.toggle?'headerSticky':false}`}>
 			<div className="row">
-				<div className="col-lg-4 col-8">
+				<div className="col-lg-4 col-10">
 					<img src={Logo} alt="no-logo"/>
 				</div>
-				<div className="col-lg-8 col-2">
-					<div className="desktopMenu">
+				
+				<div className="col-lg-8 col-2 desktopMenu">
 						<ul className="p-0 mb-0 h-100 d-flex align-items-center ">
 							<li><Link to="/" >HOME</Link></li>
 							<li><Link to="/about">ABOUT US</Link></li>
@@ -27,13 +27,14 @@ export default function Header(props){
 
 							<li><Link to="/contact">CONTACT US</Link></li>
 						</ul>
-					</div>
-					<div onClick={()=> setMobMenu(!isMobMenu)} className="mobMenuIcon">
-hu
+				</div>
+				<div className="col-2">
+					
+				<div onClick={()=> setMobMenu(!isMobMenu)} className="mobMenuIcon">
+						<i className="fa fa-bars"/>
 					</div>
 				</div>
 				{isMobMenu?
-				<div className="col-12">
 						<ul className="mb-0 h-100 mobMenu">
 							<li><Link to="/" >HOME</Link></li>
 							<li><Link to="/about">ABOUT US</Link></li>
@@ -47,8 +48,7 @@ hu
 							<li><Link to="/signup">SIGN UP</Link></li>
 
 							<li><Link to="/contact">CONTACT US</Link></li>
-						</ul>
-				</div>:false}
+						</ul>:false}
 			</div>
 		</div>
 	)

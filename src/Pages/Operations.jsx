@@ -61,15 +61,15 @@ export default function Operations(){
 				</div>
 				</div>
 				<div className="col-lg-12">
-				<div className="pt-5 pb-5">
+				<div className="sliderBlock">
 					<Slider {...settings}>
-					<div>
+					<div className="d-flex justify-content-center">
 						<img src={Img1} alt="img-1"/>
 					</div>
-					<div>
+					<div className="d-flex justify-content-center">
 					<img src={Img2} alt="img-2"/>
 					</div>
-					<div>
+					<div className="d-flex justify-content-center">
 					<img src={Img3} alt="img-3"/>
 					</div>
 					</Slider>
