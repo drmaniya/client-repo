@@ -1,6 +1,5 @@
 import React from 'react';
 import './LoginFlow.scss';
-import BgImg from '../../Assets/bg.jpeg';
 import InputField from '../Component/Input';
 import CheckBox from '../Component/CheckBox';
 import Button from '../Component/Button';
@@ -14,12 +13,7 @@ export default function Login(){
 	const navigate = useNavigate();
 	const handleClick = () => navigate('/signup');
 	return(
-		<div className="loginContainer">
-			<img src={BgImg} alt="no-img"/>
-			<div className="loginImg"></div>
-			<div className="container loginWrapper">
-				<div className="row">
-					<div className="col-sm-10 col-lg-7 col-xl-5 m-auto">
+			<div className="loginWrapper">
 						<div className="loginBlock pt-5">
 							<div className="logoLogin d-flex align-items-center justify-content-center m-auto"><img src={Logo} alt="no-logo"/></div>
 							<h4 className="text-center mb-5 pt-4">Login</h4>
@@ -41,9 +35,6 @@ export default function Login(){
 								
 							</div>
 						</div>
-					</div>
-				</div>
 			</div>
-		</div>
 	)
 }

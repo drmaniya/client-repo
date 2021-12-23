@@ -1,6 +1,6 @@
 export default function FAQ(){
 	return(
-		<div className="pt-5 pb-5">
+		<div className="wrapper">
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-2 col-md-3 col-12">

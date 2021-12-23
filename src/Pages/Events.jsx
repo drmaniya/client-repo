@@ -1,7 +1,7 @@
 import EventImg from '../Assets/event.jpg'
 export default function Events(){
 	return(
-		<div className="container pt-5 pb-5">
+		<div className="container  pb-5 wrapper">
 			<div className="row eventBg">
 				<div className=" col-lg-8 col-12">
 						<div className="black">
@@ -14,9 +14,9 @@ export default function Events(){
 						</div>
 				</div>
 			</div>
-			<div className="row">
+			<div className="row mt-5">
 				<div className="col-lg-8 col-12">
-					<div className="d-flex mt-5">
+					<div className="d-flex">
 						<div className="eventImg">
 							<img src={EventImg} alt="no-event"/>
 						</div>
@@ -31,7 +31,7 @@ export default function Events(){
 						<div className="locationMob black">
 							Location
 						</div>
-					<div className="mt-5">
+					<div>
 						<p className="mb-1">BANGALORE INTERNATIONAL </p>
 						<p className="mb-1">EXHIBITION CENTRE</p>
 						<p className="mb-1"><span className="fw-bold">Hall No</span> : 5</p>

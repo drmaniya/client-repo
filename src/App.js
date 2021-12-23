@@ -11,6 +11,7 @@ import ContactUs from './Pages/ContactUs';
 import Layout from './Pages/Layout';
 import AboutUs from './Pages/AboutUs';
 import Register from './Pages/Register';
+import BgImg from './Assets/bg.jpeg';
 import {BrowserRouter,
 	Routes, // Just Use Routes instead of "Switch"
 	Route,} from 'react-router-dom';
@@ -33,8 +34,8 @@ function App() {
 		
 		<BrowserRouter>
 		<Header toggle={toggle}/>
-		<div className="pt-5 mt-5">
-
+		<div className="hero">
+			<img src={BgImg} alt="no-found"/>
 		</div>
 			<Routes>
 				<Route exact path="/" element={<HomePage />} />
@@ -51,7 +52,7 @@ function App() {
 
 			</Routes>
     	</BrowserRouter>
-	<Footer/> 
+ 	{/* <Footer/>  */}
     </div>
   );
 }

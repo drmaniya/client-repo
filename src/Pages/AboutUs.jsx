@@ -3,7 +3,7 @@ import Img1 from '../Assets/lay1.png';
 export default function AboutUs(){
 	return(
 		<>
-		<div className="container pt-5 pb-5">
+		<div className="container pb-5 wrapper">
 			<div className="row">
 					<div className="col-lg-6 col-12">
 							<h3 className="fs-60">Introduction</h3>
@@ -69,7 +69,7 @@ export default function AboutUs(){
 					</div>
 					<div className="container mt-5">
 						<div className="row">
-								<div className="col-lg-7 col-12 d-flex  flex-column justify-content-center">
+								<div className="col-lg-7 col-12 d-flex  flex-column justify-content-center prMdSm">
 										<h3>Establisher</h3>
 										<p  className="description">
 											Established in 1985, Ankit Gems is a fast-growing Diamond Processing Company.
@@ -89,7 +89,7 @@ export default function AboutUs(){
 								<div className="col-lg-6 col-12">
 										<img src={Img1} alt="no-img-here" style={{width:'100%'}}/>
 								</div>
-								<div className="col-lg-6 col-12 d-flex  flex-column justify-content-center">
+								<div className="col-lg-6 col-12 d-flex  flex-column justify-content-center plMdSm">
 										<h3>Our people</h3>
 										<p  className="description">
 											Established in 1985, Ankit Gems is a fast-growing Diamond Processing Company.
@@ -102,7 +102,7 @@ export default function AboutUs(){
 								</div>
 						</div>
 						<div className="row mt-5">
-								<div className="col-lg-7 col-12 d-flex  flex-column justify-content-center">
+								<div className="col-lg-7 col-12 d-flex  flex-column justify-content-center prMdSm">
 										<h3>Corporate social responsibility</h3>
 										<p  className="description">
 											Established in 1985, Ankit Gems is a fast-growing Diamond Processing Company.

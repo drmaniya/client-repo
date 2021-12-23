@@ -1,6 +1,5 @@
 import React from 'react';
 import './LoginFlow.scss';
-import BgImg from '../../Assets/bg.jpeg';
 import InputField from '../Component/Input';
 import Button from '../Component/Button';
 import DropDown  from '../Component/DropDown';
@@ -9,9 +8,7 @@ import UploadBtn from '../Component/UploadBtn';
 
 export default function SignUp(){
 	return(
-		<div className="loginContainer">
-			<img src={BgImg} alt="no-img"/>
-			<div className="loginImg"></div>
+		
 			<div className="container loginWrapper">
 				<div className="row">
 					<div className="col-sm-12  col-md-12 col-lg-10 m-auto">
@@ -187,6 +184,5 @@ export default function SignUp(){
 					</div>
 				</div>
 			</div>
-		</div>
 	)
 }

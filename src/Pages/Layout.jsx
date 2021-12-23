@@ -42,7 +42,7 @@ export default function Layout(){
 					</Slider>
 				</div>
 				</div>
-				<div className="col-lg-7 col-12 d-flex flex-column justify-content-center">
+				<div className="col-lg-7 col-12 d-flex flex-column justify-content-center plMdSm">
 					<h3 className="fw-bold mb-3">Diamond Layouts</h3>
 						<p className="description">We have introduced the 'Diamond Layouts' to assist our customers in choosing diamonds as well as envisioning jewellery design layouts for the same.</p>
 						<p className="description">This is a combination of designer and elegant jewelry set outlines for the finest quality solitaires in the world, and customers can use these to base their design ideas on, as these can be easily customized according to individual tastes and preferences.</p>

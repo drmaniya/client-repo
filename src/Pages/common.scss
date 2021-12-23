@@ -57,8 +57,40 @@ a {
 .black {
   color: #000;
 }
+.prMdSm {
+  padding-right: 10rem;
+  @media (max-width: 480px) {
+    padding-right: 1rem;
+  }
+}
+.plMdSm {
+  padding-left: 10rem;
+  @media (max-width: 480px) {
+    padding-left: 1rem;
+  }
+}
 .accordion-body {
   background-color: #171717;
+}
+.wrapper {
+  margin-top: 10rem;
+}
+
+// hero
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  img {
+    width: 100%;
+    max-height: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 // header
 
@@ -170,8 +202,8 @@ a {
 }
 // faq
 .tabFaq {
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
+  background-color: #171717;
+  border: 1px solid #000;
   li {
     button {
       width: 100%;
@@ -186,10 +218,11 @@ a {
       &.nav-link {
         border-radius: 0px;
         margin-bottom: 0px;
-        color: #000;
+        color: #fff;
         &.active {
           border: none;
-          color: red;
+          color: yellow;
+          background-color: #000;
         }
       }
     }
@@ -202,11 +235,11 @@ a {
   border: 1px solid #ddd;
   border-top: 1px solid #ddd;
   button {
-    background-color: red;
-    color: #fff;
+    background-color: yellow;
+    color: #000;
     &:not(.collapsed) {
-      background-color: #f5f6f5;
-      color: #000;
+      background-color: #171717;
+      color: #fff;
     }
     &:focus {
       outline: none;
@@ -231,9 +264,9 @@ a {
       }
       &.active {
         border: none;
-        color: red;
+        color: yellow;
         background-color: transparent;
-        border-bottom: 2px solid red;
+        border-bottom: 2px solid yellow;
       }
     }
   }

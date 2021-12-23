@@ -2,7 +2,7 @@ import Img1 from '../Assets/lay1.png';
 
 export default function HomePage(){
 	return(
-		<div className="container mt-5">
+		<div className="container wrapper">
 			<div className="row">
 				<div className="col-lg-6 col-12">
 					<h4 className="fs-2">Ankit Gems is a
