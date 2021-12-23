@@ -60,21 +60,24 @@ export default function Operations(){
 						</div>
 				</div>
 				</div>
-				<div className="col-lg-12">
+				<div className="col"></div>
+				<div className="col-lg-6 col-12">
 				<div className="sliderBlock">
 					<Slider {...settings}>
 					<div className="d-flex justify-content-center">
-						<img src={Img1} alt="img-1"/>
+						<img src={Img1} alt="img-1" style={{width:'100%'}}/>
 					</div>
 					<div className="d-flex justify-content-center">
-					<img src={Img2} alt="img-2"/>
+					<img src={Img2} alt="img-2" style={{width:'100%'}}/>
 					</div>
 					<div className="d-flex justify-content-center">
-					<img src={Img3} alt="img-3"/>
+					<img src={Img3} alt="img-3" style={{width:'100%'}}/>
 					</div>
 					</Slider>
 				</div>
 				</div>
+				
+				<div className="col"></div>
 			</div>
 		</div>
 	)

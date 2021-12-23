@@ -14,12 +14,12 @@ export default function HomePage(){
 				</div>
 			</div>
 			<div className="row mt-5 mb-5">
-				<div className="col-lg-6 col-12 d-flex flex-column justify-content-center">
+				<div className="col-lg-7 col-12 d-flex flex-column justify-content-center">
 					<h4 className="fs-2">Implementation</h4>
 					<p className="description">Only careful and precise implementation prevents an idea from shattering - so that it can reach its full potential.</p>
 				</div>	
-				<div className="col-lg-6 col-12">
-					<img src={Img1} alt="no-img-found"/>
+				<div className="col-lg-5 col-12">
+					<img src={Img1} alt="no-img-found" style={{height:'100%',width:'100%'}}/>
 				</div>
 				<div className="col-12 mb-5 mt-5">
 					<h4 className="fs-2">Partnership companies</h4>

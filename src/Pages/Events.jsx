@@ -8,7 +8,7 @@ export default function Events(){
 							Show
 						</div>
 				</div>
-				<div className=" col-lg-4 col-12">
+				<div className=" col-lg-4 col-12 locationDesktop">
 						<div className="black">
 							Location
 						</div>
@@ -28,6 +28,9 @@ export default function Events(){
 					</div>
 				</div>
 				<div className=" col-lg-4 col-12">
+						<div className="locationMob black">
+							Location
+						</div>
 					<div className="mt-5">
 						<p className="mb-1">BANGALORE INTERNATIONAL </p>
 						<p className="mb-1">EXHIBITION CENTRE</p>

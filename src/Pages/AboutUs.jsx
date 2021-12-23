@@ -81,13 +81,13 @@ export default function AboutUs(){
 										</p>
 								</div>
 								<div className="col-lg-5 col-12">
-										<img src={Img1} alt="no-img-here"/>
+										<img src={Img1} alt="no-img-here" style={{width:'100%'}}/>
 								</div>
 						</div>
 						
 						<div className="row mt-5">
 								<div className="col-lg-6 col-12">
-										<img src={Img1} alt="no-img-here"/>
+										<img src={Img1} alt="no-img-here" style={{width:'100%'}}/>
 								</div>
 								<div className="col-lg-6 col-12 d-flex  flex-column justify-content-center">
 										<h3>Our people</h3>
@@ -114,7 +114,7 @@ export default function AboutUs(){
 										</p>
 								</div>
 								<div className="col-lg-5 col-12">
-										<img src={Img1} alt="no-img-here"/>
+										<img src={Img1} alt="no-img-here" style={{width:'100%'}}/>
 								</div>
 						 </div>
 						<div className="row pt-5 pb-5">		

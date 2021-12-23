@@ -31,13 +31,13 @@ export default function Layout(){
 				<div className="sliderBlock">
 					<Slider {...settings}>
 					<div>
-						<img src={Img1} alt="img-1"/>
+						<img src={Img1} alt="img-1" style={{width:'100%'}}/>
 					</div>
 					<div>
-					<img src={Img2} alt="img-2"/>
+					<img src={Img2} alt="img-2" style={{width:'100%'}}/>
 					</div>
 					<div>
-					<img src={Img3} alt="img-3"/>
+					<img src={Img3} alt="img-3" style={{width:'100%'}}/>
 					</div>
 					</Slider>
 				</div>
