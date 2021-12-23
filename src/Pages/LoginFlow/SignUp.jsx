@@ -17,7 +17,7 @@ export default function SignUp(){
 							<p className="text-center">This information will let us know more about you.</p>
 							<div className="row pt-3">
 							<nav>
-							<div class="nav nav-tabs" id="nav-tab" role="tablist">
+							<div class="nav nav-tabs operation-tab" id="nav-tab" role="tablist">
 								<button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Login Details</button>
 								<button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Personal Details</button>
 								<button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reference Details</button>
@@ -30,10 +30,10 @@ export default function SignUp(){
 											<InputField placeholder="UserName" required/>
 										</div>
 										<div className="col-lg-4 col-md-6 col-12">
-											<InputField placeholder="Password" required/>
+											<InputField placeholder="Password" required type="password"/>
 										</div>
 										<div className="col-lg-4 col-md-6 col-12">
-											<InputField placeholder="Confirm Password" required/>
+											<InputField placeholder="Confirm Password" required type="password"/>
 										</div>
 									</div>
 								</div>

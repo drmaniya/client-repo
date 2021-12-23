@@ -18,7 +18,7 @@ export default function Login(){
 							<div className="logoLogin d-flex align-items-center justify-content-center m-auto"><img src={Logo} alt="no-logo"/></div>
 							<h4 className="text-center mb-5 pt-4">Login</h4>
 							<InputField placeholder="UserName" required error="Invalid Username"/>
-							<InputField placeholder="Password" required error="Invalid Password"/>
+							<InputField placeholder="Password" required error="Invalid Password" type="password"/>
 							<div className="mb-5 d-flex align-items-center justify-content-between">
 								<CheckBox/>
 								<Button linkBtn label="Forgot Password?" />
