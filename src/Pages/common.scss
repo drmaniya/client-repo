@@ -103,9 +103,13 @@ a {
       align-items: flex-end;
       padding: 10rem;
     }
-    h1 {
-      font-size: 70px;
+    .heroDesc {
+      h1 {
+        font-size: 70px;
+        margin-bottom: 2rem;
+      }
       padding: 2rem;
+      max-width: 70%;
       background-color: #000;
       opacity: 0.9;
       text-transform: capitalize;

@@ -9,7 +9,7 @@ import UploadBtn from '../Component/UploadBtn';
 export default function SignUp(){
 	return(
 		
-			<div className="container loginWrapper">
+			<div className="container loginWrapper signUp">
 				<div className="row">
 					<div className="col-sm-12  col-md-12 col-lg-10 m-auto">
 						<div className="loginBlock pt-3">

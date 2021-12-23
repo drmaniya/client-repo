@@ -25,9 +25,19 @@ import {BrowserRouter,
 			<img src={BgImg} alt="no-found"/>
 			<div className="heroTitle">
 				<div className="heroBlock">
-				{location.pathname === "/login"? '': location.pathname === "/signup"?'': location.pathname === "/" ? <h1>Welcome to Diamond</h1>: <h1>{location.pathname.substring(1)}</h1>}
+				{location.pathname === "/login"? '': location.pathname === "/signup"?'': location.pathname === "/" ? 
+				<div className="heroDesc"><h1>Welcome to Diamond</h1>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
 				</div>
-			</div>
+				: 
+				<div className="heroDesc">
+				<h1>{location.pathname.substring(1)}</h1>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+					</div>
+				}
+				</div>
+				</div>
 		</div>
 		)
 	}
