@@ -12,10 +12,17 @@ import Layout from './Pages/Layout';
 import AboutUs from './Pages/AboutUs';
 import Register from './Pages/Register';
 import BgImg from './Assets/bg.jpeg';
-import {BrowserRouter,
+import OverView from './Pages/Dashboard/Overview';
+import {
 	Routes, // Just Use Routes instead of "Switch"
 	useLocation,
+	useNavigate,
 	Route,} from 'react-router-dom';
+import ChangePassword from './Pages/Dashboard/ChangePassword';
+import MainMaster from './Pages/Dashboard/Masters/MainMaster';
+import SubMaster from './Pages/Dashboard/Masters/SubMaster';
+import Feedback from './Pages/Dashboard/Feedback';
+import DashHeader from './Pages/Dashboard/DashHeader';
 
 
 	const Hero = () => {
@@ -43,6 +50,8 @@ import {BrowserRouter,
 	}
 function App() {
 	const [toggle, setToggle] = useState(false);
+	const [isAuthenticated,setAuthenticated] = useState(false);
+	const navigate = useNavigate();
 	const handleScroll = () => {
         if (window.screenTop + window.pageYOffset > 10) {
             setToggle(true);
@@ -54,16 +63,34 @@ function App() {
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
     }, []);
+	const handleClick = () => {
+		setAuthenticated(!isAuthenticated);
+		navigate('/overview');
+	}
   return (
     <div onScroll={handleScroll}>
-		
-		<BrowserRouter>
-		<Header toggle={toggle}/>
-		<Hero/>
+		{isAuthenticated?
+		<>
+		<DashHeader  toggle={toggle}/>
+			<Routes>
+				
+				<Route exact path="/overview" element={<OverView />} />
+				<Route path="/change-password" element={<ChangePassword /> }/>
+				<Route path="/feedback" element={<Feedback /> }/>
+				<Route path="/main-master" element={<MainMaster /> }/>
+				<Route path="/sub-master" element={<SubMaster /> }/>
+
+
+			</Routes>
+			</>
+			:
+			<>
+			<Header toggle={toggle}/>
+			<Hero/>
 			<Routes>
 				
 				<Route exact path="/" element={<HomePage />} />
-				<Route path="/login" element={<Login/>} />
+				<Route path="/login" element={<Login handleDashboard={handleClick}/>} />
 				<Route path="/about" element={<AboutUs/>} />
 				<Route path="/contact" element={<ContactUs/>} />
 				<Route path="/layout" element={<Layout/>} />
@@ -73,10 +100,10 @@ function App() {
 				<Route path="/events" element={<Events/>} />
 				<Route path="/register" element={<Register/>} />
 
-
 			</Routes>
-    	</BrowserRouter>
- 	<Footer/> 
+			<Footer/>
+			</> }
+ 
     </div>
   );
 }

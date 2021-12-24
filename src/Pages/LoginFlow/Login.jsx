@@ -9,7 +9,7 @@ import {
  } from 'react-router-dom';
 
 
-export default function Login(){
+export default function Login(props){
 	const navigate = useNavigate();
 	const handleClick = () => navigate('/signup');
 	return(
@@ -24,7 +24,7 @@ export default function Login(){
 								<Button linkBtn label="Forgot Password?" />
 							</div>
 							<div className="mb-3 text-center">
-								<Button  primaryBtn label="Login"/>
+								<Button  primaryBtn label="Login" onClick={props.handleDashboard}/>
 							</div>
 							<div className="mb-3 text-center">
 

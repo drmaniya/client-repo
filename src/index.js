@@ -7,11 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 import './Pages/common.scss';
 import './Assets/scss/style.scss';
-
+import {BrowserRouter} from 'react-router-dom';
+import './Pages/Dashboard/Dashboard.scss';
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
